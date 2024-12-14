@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style1.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>User Dashboard Panel</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+               <img src="images/itk.png" alt="">
+            </div>
+
+            <span class="logo_name">User</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Dashboard</span>
+                </a></li>
+                
+                <li><a href="user_dlist.php">
+                    <i class="uil uil-user-nurse"></i>
+                    <span class="link-name">Subjects</span>
+                </a></li>
+                <li><a href="user_sched.php">
+                    <i class="uil uil-schedule"></i>
+                    <span class="link-name">My Schedule</span>
+                </a></li>
+                <li><a href="user_price.php">
+                    <i class="uil uil-receipt-alt"></i>
+                    <span class="link-name">BCP Store</span>
+                </a></li>
+                <li><a href="user_mess.php">
+                    <i class="uil uil-envelope-check"></i>
+                    <span class="link-name">Announcements</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            
+           <img src="images/mal.jpg" alt="">
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <i class="uil uil-schedule"></i>
+                        <span class="text">Class Adviser</span>
+                        <span class="number">Patrick Lim</span>
+                    </div>
+                    <div class="box box2">
+                        <i class="uil uil-receipt-alt"></i>
+                        <span class="text">Course and Section</span>
+                        <span class="number">BSIT - 31022</span>
+                    </div>
+                    <div class="box box3">
+                        <i class="uil uil-bill"></i>
+                        <span class="text">Balance</span>
+                        <span class="number">₱ 0.00</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity">
+                <div class="title">
+                    <i class="uil uil-clock-three"></i>
+                    <span class="text">Recent Activity</span>
+                </div>
+
+                <div class="activity-data">
+                    <div class="data names">
+                        <span class="data-title">Activity</span>
+                        <span class="data-list">Name Update</span>
+                        <span class="data-list">Store Add to Cart</span>
+                       
+                        
+                    </div>
+                    <div class="data email">
+                        <span class="data-title">Process</span>
+                        <span class="data-list">Mary Loi Yves Ricalde</span>
+                        <span class="data-list">Book - Application Development</span>
+                       
+                        
+                    </div>
+                    <div class="data joined">
+                        <span class="data-title">Date</span>
+                        <span class="data-list">2024-29-05</span>
+                        <span class="data-list">2024-29-05</span>
+                        
+                        
+                    </div>
+                    <div class="data type">
+                        <span class="data-title">Time</span>
+                        <span class="data-list">15:36 PM</span>
+                        <span class="data-list">9:09 AM</span>
+                        
+                        
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">Status</span>
+                        <span class="data-list">Successful</span>
+                        <span class="data-list">Successful</span>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity">
+                <div class="title">
+                    <i class="uil uil-clock-three"></i>
+                    <span class="text">Newsfeed</span>
+                </div>
+</div>
+
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+    
+
+    <!-- START blog -->
+			
+				<div class="container">
+				<div class="section_heading text-center">
+                    <h2>Latest <span>News</span></h2>
+                    <p>Welcome! Here are the latest news in our university.</p>
+                </div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="blog_slider_area owl-carousel">
+								<div class="box-area">	
+									<div class="single-blog">
+                                        <div class="post-img">
+                                            <img src="enroll.jpg" alt=""/>
+                                        </div>
+                                        <div class="single_blog">
+                                            <a href="https://bcp.edu.ph/news/enrollment-is-ongoing"><h3 class="post-title">Enrollment Schedule</h3></a>
+                                            <ul class="icon-area">
+                                                <li><i class="fa fa-users"></i>Admin</li>
+                                                <li><i class="fa fa-clock-o"></i>June 07,2024 </li>										
+                                            </ul>
+                                            <p class="blog-text">
+                                                FOLLOW THESE ENROLLMENT STEPS: <br>
+
+1. Click the link below for the online registration.<br>
+
+Link: https://admission.bcp.edu.ph/
+
+
+                                            </p>
+                                            <div class="btn-area">
+                                                <a href="https://bcp.edu.ph/news/enrollment-is-ongoing" class="btn btn-default main_btn">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+								</div> 
+                                
+							
+								<div class="box-area">	
+									<div class="single-blog wow fadeInUp">
+                                        <div class="post-img">
+                                            <img src="images/testimonial.jpg" alt=""/>
+                                        </div>
+                                        <div class="single_blog">
+                                            <a href="https://bcp.edu.ph/news/Testimonial-Ceremony"><h3 class="post-title">Testimonial Ceremony</h3></a>
+                                            <ul class="icon-area">
+                                                <li><i class="fa fa-users"></i>Admin</li>
+                                                <li><i class="fa fa-clock-o"></i>October 10,2023 </li>										
+                                            </ul>
+                                            <p class="blog-text">
+                                                Bestlink College of the Philippines commemorated the success of newly licensed teachers, criminologists, psychometricians, and librarians during the Testimonial Ceremony on October 08, 2023 at BCP MV - Gymnasium.
+                                            </p>
+                                            <div class="btn-area">
+                                                <a href="https://bcp.edu.ph/news/Testimonial-Ceremony" class="btn btn-default main_btn">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+								</div> <!-- END SINGLE blogS -->	
+							
+								<div class="box-area">	
+									<div class="single-blog wow fadeInUp">
+                                        <div class="post-img">
+                                            <img src="images/resbul.png" alt=""/>
+                                        </div>
+                                        <div class="single_blog">
+                                            <a href="https://bcp.edu.ph/news/Bulacan-BSCPE-Students-Win-at-Research-Festival-with-Innovative-Vital-Signs-Monitoring-System"><h3 class="post-title">Bulacan BSCPE Students Win at Research Festival with Innovative Vital Signs Monitoring System</h3></a>
+                                            <ul class="icon-area">
+                                                <li><i class="fa fa-users"></i>Admin</li>
+                                                <li><i class="fa fa-clock-o"></i>June 27,2024 </li>										
+                                            </ul>
+                                            <p class="blog-text">
+                                                We are thrilled to congratulate the outstanding students from the Bulacan campus BSCPE for their remarkable achievement in developing the 'Vital Signs Monitoring System with Data Output Interface using Arduino Mega.' Their victory at the 7th Multidisciplinary Research Festival on May 23, 2024, held at the Bestlink College of the Philippines MV campus, is a testament to their perseverance, creativity, and commitment to pushing the boundaries of technology.
+                                            </p>
+                                            <div class="btn-area">
+                                                <a href="https://bcp.edu.ph/news/Bulacan-BSCPE-Students-Win-at-Research-Festival-with-Innovative-Vital-Signs-Monitoring-System" class="btn btn-default main_btn">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+								</div> <!-- END SINGLE blogS -->
+							
+								<div class="box-area">	
+									<div class="single-blog wow fadeInUp">
+                                        <div class="post-img">
+                                            <img src="images/servtrain.png" alt=""/>
+                                        </div>
+                                        <div class="single_blog">
+                                            <a href="https://bcp.edu.ph/news/INSET-2023"><h3 class="post-title">In- Service Training for Teachers 2023, Theme: "Upskills for Teachers in the Context of Sustaining Flexible Learning in BCP with Safe and Healthy Environment"</h3></a>
+                                            <ul class="icon-area">
+                                                <li><i class="fa fa-users"></i>Admin</li>
+                                                <li><i class="fa fa-clock-o"></i>August 11,2023 </li>										
+                                            </ul>
+                                            <p class="blog-text">
+                                                The In-Service Training for Teachers with the theme "Upskills for Teachers in the Context of Sustaining Flexible Learning in BCP with Safe and Healthy Environment" was attended by the School Officials, Staffs and Teachers to be ever-ready educators as we start another School year in 2023-2024. It was held at BCP-MV Gymnasium last August 8-10, 2023.
+                                            </p>
+                                            <div class="btn-area">
+                                                <a href="https://bcp.edu.ph/news/INSET-2023" class="btn btn-default main_btn">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+								</div> <!-- END SINGLE blogS -->
+							
+								<div class="box-area">	
+									<div class="single-blog wow fadeInUp">
+                                        <div class="post-img">
+                                            <img src="images/formalsign.png" alt=""/>
+                                        </div>
+                                        <div class="single_blog">
+                                            <a href="https://bcp.edu.ph/news/BCP-Formal-Signing-of-Memorandum-of-Agreement-March-20-2023"><h3 class="post-title">BCP Formal Signing of Memorandum of Agreement / Understanding between / among Industry-Partners / Service Providers.</h3></a>
+                                            <ul class="icon-area">
+                                                <li><i class="fa fa-users"></i>Admin</li>
+                                                <li><i class="fa fa-clock-o"></i>March 23,2023 </li>										
+                                            </ul>
+                                            <p class="blog-text">
+                                                The signing of the Memorandum of Agreement and Understanding (MOA) between Bestlink College of the Philippines (BCP) and the Industry Partners and Service Providers marks another milestone in the history of BCP in its 21 years of operation. The main objective of entering into this partnership is for the betterment of the students, making learning more efficient and productive.
+                                            </p>
+                                            <div class="btn-area">
+                                                <a href="https://bcp.edu.ph/news/BCP-Formal-Signing-of-Memorandum-of-Agreement-March-20-2023" class="btn btn-default main_btn">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+								</div> <!-- END SINGLE blogS -->
+							
+								<div class="box-area">	
+									<div class="single-blog wow fadeInUp">
+                                        <div class="post-img">
+                                            <img src="images/poster.png" alt=""/>
+                                        </div>
+                                        <div class="single_blog">
+                                            <a href="https://bcp.edu.ph/news/poster-making-contest-11-17-2022"><h3 class="post-title">Poster Making Contest Last November 17, 2022</h3></a>
+                                            <ul class="icon-area">
+                                                <li><i class="fa fa-users"></i>Admin</li>
+                                                <li><i class="fa fa-clock-o"></i>January 13,2023 </li>										
+                                            </ul>
+                                            <p class="blog-text">
+                                                The decision have been made and winners are already chosen! Congratulations to all the winners of Poster Making Contest Last November 17, 2022 held at BCP Library, 3rd Floor, MV Campus. Such a very talented students of bcp, indeed! keep practicing your talents for a better improvement.
+                                            </p>
+                                            <div class="btn-area">
+                                                <a href="https://bcp.edu.ph/news/poster-making-contest-11-17-2022" class="btn btn-default main_btn">read more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+								</div> <!-- END SINGLE blogS -->	
+							</div>
+						</div>
+					</div>
+				</div>
+			
+		<!-- END blog -->
+
+            
+
+            
+        </div>
+    </section>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+		<script>
+        $(".blog_slider_area").owlCarousel({
+				autoplay: true,
+				slideSpeed:1000,
+				items : 3,
+				loop: true,
+				nav:false,
+				margin: 30,
+				dots: true,
+				responsive:{
+					320:{
+						items:1
+					},
+					767:{
+						items:2
+					},
+					600:{
+						items:2
+					},
+					1000:{
+						items:3
+					}
+				}
+				
+			});
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
